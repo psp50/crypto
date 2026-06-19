@@ -5,11 +5,12 @@ const data = 'Hello World!'
 
 const hash = crypto.createHash('sha256')
                     .update(data)
-                    .digest('hex');
+                    .digest('hex');     
 
 // console.log(hash)
-
 //2 . Hmac
+
+
 
 const hmac = crypto.createHmac('sha256','my_seceret_key').update(data).digest('hex');
 console.log(hmac);
